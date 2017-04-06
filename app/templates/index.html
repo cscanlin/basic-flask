@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <form action="" method="post" name="basic_form">
+    <p>
+      Please enter your Input:<br>
+      {{ form.basic_input(size=80) }}<br>
+    </p>
+    <p><input type="submit" value="Submit"></p>
+  </form>
+
+  {% if output %}
+    <span>Output: {{ output }}</span>
+  {% endif %}
+{% endblock %}
